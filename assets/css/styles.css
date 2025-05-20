@@ -1,11 +1,11 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   background-color: #f8f9fa;
   color: #333;
 }
 
 .hero {
-  background: url('hero-bg.jpg') no-repeat center center / cover;
+  background: url("hero-bg.jpg") no-repeat center center/cover;
   min-height: 60vh;
 }
 
@@ -15,7 +15,8 @@ body {
   color: #000;
 }
 
-.footer, .navbar {
+.footer,
+.navbar {
   background-color: #111;
 }
 
@@ -27,85 +28,78 @@ body {
   background-color: #ffe5b4;
   color: #000;
 }
+
 /* estilos generales */
-
 .hero {
-    background: url('../img/galpones-industriales.webp') center center / cover no-repeat;
-    height: 500px;
-    position: relative;
-  }
-  
-  .hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* oscurece imagen para contraste */
-    z-index: 1;
-  }
-  
-  .hero .container {
-    position: relative;
-    z-index: 2;
-  }
-  
-  .animate-fade-in {
-    animation: fadeIn 1.2s ease-in-out both;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(15px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  /* hasta aca hero */
+  background: url("../img/galpones-industriales.webp") center center/cover no-repeat;
+  height: 500px;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
 
-  .accordion-button:not(.collapsed) {
-    background-color: #ffc1071a; /* amarillo claro */
-    color: #333;
-    font-weight: 600;
+.animate-fade-in {
+  animation: fadeIn 1.2s ease-in-out both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
   }
-  
-  .accordion-button:focus {
-    box-shadow: none;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
+}
+/* hasta aca hero */
+.accordion-button:not(.collapsed) {
+  background-color: rgba(255, 193, 7, 0.1019607843);
+  color: #333;
+  font-weight: 600;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
 
 /* tarjeta preguntas frecuentes */
+.card {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
 
-  .card {
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
-  }
-  
-  input::placeholder,
-  textarea::placeholder {
-    color: #bbb;
-  }
-  /* esto tarjeta consultas */
+input::placeholder,
+textarea::placeholder {
+  color: #bbb;
+}
 
-  .footer-link {
-    color: #ccc;
-    text-decoration: none;
-  }
-  
-  .footer-link:hover {
-    color: #f8b500;
-    text-decoration: underline;
-  }
-  /*footer */
+/* esto tarjeta consultas */
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+}
+.footer-link:hover {
+  color: #f8b500;
+  text-decoration: underline;
+}
 
+/*footer */
 .timeline .border-start {
   position: relative;
 }
 .timeline .border-start::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -11px;
@@ -117,4 +111,7 @@ body {
 .timeline h6 {
   margin-bottom: 0.25rem;
 }
+
 /* linea tiempo sobre nosotros */
+
+/*# sourceMappingURL=styles.css.map */
