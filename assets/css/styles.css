@@ -30,7 +30,7 @@ body {
 /* estilos generales */
 
 .hero {
-    background: url('/assets/img/galpones-industriales.webp') center center / cover no-repeat;
+    background: url('../img/galpones-industriales.webp') center center / cover no-repeat;
     height: 500px;
     position: relative;
   }
